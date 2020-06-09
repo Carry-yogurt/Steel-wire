@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/txt_mingxi"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:layout_marginLeft="25dp"
+            android:background="#ffffff"
+            android:src="@drawable/tab_menu_mingxi">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/mingxi"
+            android:layout_marginLeft="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mingxi"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:text="明细"
+            android:textColor="@drawable/tab_menu_all_text" />
+
+
+        <ImageButton
+            android:id="@+id/txt_add"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:clickable="false"
+            android:background="#ffffff"
+            android:layout_toRightOf="@+id/mingxi"
+            android:src="@drawable/tab_menu_tianjia">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tianjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_add"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/txt_mingxi"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:text="添加"
+            android:textColor="@drawable/tab_menu_all_text" />
+
+        <ImageButton
+            android:id="@+id/txt_jizhang1"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="65dp"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:layout_toRightOf="@+id/tianjia"
+            android:src="@drawable/a_tubiao">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/jizhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_jizhang1"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/txt_add"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:gravity="center"
+            android:text="图表"
+            android:textColor="@drawable/tab_menu_all_text" />
+
+        <ImageButton
+            android:id="@+id/txt_user"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="65dp"
+            android:clickable="false"
+            android:background="#ffffff"
+            android:layout_toRightOf="@+id/jizhang"
+            android:src="@drawable/tab_menu_user">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/wode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_user"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/txt_jizhang1"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/tab_menu_all_text" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/tab_menu"
+        android:layout_marginBottom="0dp"
+        android:background="#CEFFC107" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_menu"
+        android:background="#FDFCFC">
+    </FrameLayout>
+
+</RelativeLayout>

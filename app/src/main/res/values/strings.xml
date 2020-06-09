@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">钢镚儿</string>
+    <string name="textview">本月总支出：</string>
+    <string name="textview1">本月总收入：</string>
+    <string name="textview2">余额：</string>
+    <string name="shouru">0元</string>
+    <string name="zhichu">0元</string>
+    <string name="yue">0元</string>
+</resources>

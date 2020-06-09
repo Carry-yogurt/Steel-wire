@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#DCFFC107">
+
+
+        <TextView
+            android:id="@+id/txt_shouru"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text= "支出" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#E91E63"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xian"
+        android:layout_below="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        >
+
+        <RelativeLayout
+            android:id="@+id/viewpager_item"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            >
+            <ImageButton
+                android:id="@+id/canyin"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/canyin"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+            <TextView
+                android:id="@+id/txt_canyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="餐饮"
+                android:layout_below="@+id/canyin"
+                android:layout_marginLeft="11dp"
+                />
+            <ImageButton
+                android:id="@+id/gouwu"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/gouwu"
+                android:layout_toRightOf="@+id/canyin"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_gouwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gouwu"
+                android:layout_marginLeft="-25dp"
+                android:layout_toRightOf="@+id/gouwu"
+                android:text="购物" />
+
+            <ImageButton
+                android:id="@+id/tongxun"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/chongzhi"
+                android:layout_toRightOf="@+id/gouwu"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_tongxun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gouwu"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txt_gouwu"
+                android:text="充值" />
+
+            <ImageButton
+                android:id="@+id/hongbao"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/hongbao"
+                android:layout_toRightOf="@+id/tongxun"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_hongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tongxun"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/txt_tongxun"
+                android:text="红包" />
+
+            <ImageButton
+                android:id="@+id/jiaotong"
+                android:layout_width="30dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/jiaotong"
+                android:layout_toRightOf="@+id/hongbao"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_jiaotong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hongbao"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/txt_hongbao"
+                android:text="交通" />
+
+            <ImageButton
+                android:id="@+id/liwu"
+                android:layout_width="38dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/liwu"
+                android:layout_toRightOf="@+id/jiaotong"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_liwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jiaotong"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@+id/txt_jiaotong"
+                android:text="礼物" />
+
+            <ImageButton
+                android:id="@+id/shuiguo"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/shuiguo"
+                android:layout_toRightOf="@+id/liwu"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_shuiguo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/liwu"
+                android:layout_marginLeft="19dp"
+                android:layout_toRightOf="@+id/txt_liwu"
+                android:text="水果" />
+
+            <ImageButton
+                android:id="@+id/yiliao"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/yiliao"
+                android:layout_toRightOf="@+id/shuiguo"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_yiliao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shuiguo"
+                android:layout_marginLeft="19dp"
+                android:layout_toRightOf="@+id/txt_shuiguo"
+                android:text="医疗" />
+
+            <ImageButton
+                android:id="@+id/yule"
+                android:layout_width="34dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/yule"
+                android:layout_below="@+id/txt_canyin"
+                android:clickable="false"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_yule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/yule"
+                android:layout_marginLeft="17dp"
+                android:text="娱乐" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/viewpager_item"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xie"
+        android:layout_below="@+id/xian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp">
+
+        <TextView
+            android:id="@+id/type"
+            android:textColor="#333333"
+            android:textSize="26sp"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/tb_note_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tb_note_clear"
+            android:maxLength="11"
+            android:hint="金额"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+        <ImageView
+            android:id="@+id/tb_note_clear"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/close"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_layout"
+        android:layout_below="@+id/xie"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:background="#FBECBC"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/add_rili"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="日期"
+            android:textSize="17sp"
+            android:textColor="#000000"/>
+
+
+
+        <TextView
+            android:id="@+id/queren"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="160dp"
+            android:layout_toRightOf="@+id/add_rili"
+            android:text="确认"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_marginTop="13dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_layout">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

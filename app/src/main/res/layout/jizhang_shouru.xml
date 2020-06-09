@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#DCFFC107">
+
+
+        <TextView
+            android:id="@+id/txt_shouru"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text= "收入" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#E91E63"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xian"
+        android:layout_below="@+id/tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        >
+
+        <RelativeLayout
+            android:id="@+id/viewpager_item"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            >
+
+            <ImageButton
+                android:id="@+id/gongzi"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/a_gongzi"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+            <TextView
+                android:id="@+id/txt_gongzi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gongzi"
+                android:text="工资"
+                android:layout_marginLeft="18dp"
+                />
+
+
+            <ImageButton
+                android:id="@+id/a_hongbao"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/a_hongbao"
+                android:layout_toRightOf="@+id/gongzi"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_a_hongbao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/a_hongbao"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/txt_gongzi"
+                android:text="红包" />
+
+
+            <ImageButton
+                android:id="@+id/jianzhi"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/a_jianzhi"
+                android:layout_toRightOf="@+id/a_hongbao"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_jianzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jianzhi"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/txt_a_hongbao"
+                android:text="兼职" />
+
+            <ImageButton
+                android:id="@+id/lijin"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/a_lijin"
+                android:layout_toRightOf="@+id/jianzhi"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_lijin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lijin"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/txt_jianzhi"
+                android:text="礼金" />
+
+            <ImageButton
+                android:id="@+id/qita"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/a_qita"
+                android:layout_toRightOf="@+id/lijin"
+                android:clickable="false"
+                android:background="#ffffff"
+                android:layout_marginLeft="11dp"/>
+
+            <TextView
+                android:id="@+id/txt_qita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qita"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/txt_lijin"
+                android:text="其他" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/viewpager_item"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xie"
+        android:layout_below="@+id/xian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp">
+
+        <TextView
+            android:id="@+id/type_shouru"
+            android:textColor="#333333"
+            android:textSize="26sp"
+            android:layout_alignParentLeft="true"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/tb_shouru_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tb_note_clear"
+            android:maxLength="11"
+            android:hint="金额"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+        <ImageView
+            android:id="@+id/tb_note_clear"
+            android:layout_alignParentRight="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/close"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_layout"
+        android:layout_below="@+id/xie"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:background="#FBECBC"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="40dp">
+
+
+        <TextView
+            android:id="@+id/add_rili1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="日期"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#000000"/>
+
+
+
+        <TextView
+            android:id="@+id/queren1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="160dp"
+            android:layout_toRightOf="@+id/add_rili1"
+            android:text="确认"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_marginTop="13dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_layout">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:background="#ffffff" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

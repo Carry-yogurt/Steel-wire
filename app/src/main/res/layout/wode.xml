@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:background="#DCFFC107"
+        android:layout_height="48dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="190dp"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#FFC107"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dk"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/daka_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打卡天数"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"/>
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0天"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="170dp"/>
+
+        <Button
+            android:id="@+id/daka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打卡"
+            android:textSize="20sp"
+            android:background="#F8F17D"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="260dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#FFC107"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/yusuan"
+        android:layout_below="@+id/dk"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:id="@+id/pie_chart"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/yue"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_marginLeft="45dp"/>-->
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="设置预算"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="5dp"/>
+        <EditText
+            android:id="@+id/jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="输入金额"
+            android:text="1000"
+            android:textSize="23sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="160dp"/>
+        <Button
+            android:id="@+id/queding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_bianse"
+            android:layout_marginLeft="265dp"
+            android:textSize="17sp"
+            android:text="确认"
+            android:layout_marginTop="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#FFC107"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/huafei"
+        android:layout_below="@+id/yusuan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月余额"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/yue_money"
+            android:layout_below="@+id/yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100元"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/zhichu"
+            android:layout_toRightOf="@+id/yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本月支出"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/zhichu_money"
+            android:layout_below="@+id/yue"
+            android:layout_toRightOf="@+id/yue_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100元"
+            android:textSize="18sp"
+            android:layout_marginLeft="185dp"
+            android:layout_marginTop="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#FFC107"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lianxius"
+        android:layout_below="@+id/huafei"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/wotu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/lianxiwo"
+            android:layout_marginLeft="8dp"/>
+        <TextView
+            android:id="@+id/lianxi"
+            android:layout_toRightOf="@+id/wotu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系我们"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:layout_toRightOf="@+id/lianxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3110414452@qq.com"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#FFC107"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/yusuan2"
+        android:layout_below="@id/lianxius"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <!--        <lecho.lib.hellocharts.view.PieChartView-->
+        <!--            android:id="@+id/pie_chart"-->
+        <!--            android:layout_width="226dp"-->
+        <!--            android:layout_height="226dp"-->
+
+        <!--            android:layout_centerInParent="true" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
